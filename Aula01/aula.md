@@ -1,4 +1,4 @@
-# Curso de Verão em Bioinformática 2020 - Curso Prático
+# Curso de introdução à bioinformática com ênfase em diagnóstico - Prática guiada
 
 Este curso tem como objetivo explorar de forma prática as diversas etapas de um pipeline padrão para análises de dados NGS em rotina de testes genéticos. Curso desenvolvido pela equipe de bioinformática do Hospital Israelita Albert Einstein:
 * Deyvid Amgarten, Murilo Cervato, Pedro Sebe e Rodrigo Reis
