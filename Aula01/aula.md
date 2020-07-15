@@ -200,8 +200,6 @@ dados/fastq/AMOSTRA01_S1_R1_001_cutadapt.fastq \
 dados/fastq/AMOSTRA01_S1_R2_001_cutadapt.fastq >dados/bwa/AMOSTRA01_S1.sam
 ```
 
-# Dia 4
-
 ## Utilizar o samtools: fixmate, sort e index
 ```
 time samtools fixmate dados/bwa/AMOSTRA01_S1.sam dados/bwa/AMOSTRA01_S1.bam
