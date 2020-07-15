@@ -23,7 +23,8 @@ Port**
 * Clique em OK para iniciar a sessão
 
 ## Checar as permissões e coverter os BCLs para FASTQ
-Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. **Este procedimento será feito apenas pelo palestrante**.
+Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. 
+**Este procedimento já foi realizado pelo palestrante**.
 ```
 ls -l /bioinfo/dados/NextSeq_RUN01
 chmod -R 775 /bioinfo/dados/NextSeq_RUN01/Files
@@ -31,21 +32,13 @@ cd /bioinfo/dados/NextSeq_RUN01/Files
 nohup bcl2fastq --no-lane-splitting --barcode-mismatches 1 1>bcl2fastq.log &
 ```
 
-## Verificar se o processo esta em execução e escrevendo o LOG
-```
-#lista as primeiras n linhas;
-head bcl2fastq.log 
-#lista as ultimas n linhas; Para sair digite <Ctrl>+C;
-tail -f bcl2fastq.log 
-```
+## Manual dos comando de linux
+Forma fácil de obter informações sobre comandos específicos do linux:
 
-## Manual dos comando de linux;
 ```
 man ls
 man cp
 man cat
-#Variável $PWD contém o caminho "onde estou"
-echo $PWD
 ```
 
 ## Listar o diretório atual;
