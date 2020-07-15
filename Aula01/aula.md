@@ -6,17 +6,21 @@ Este curso tem como objetivo explorar de forma prática as diversas etapas de um
 # Dia 1
 
 ## Configurações e acesso aos servidores na nuvem
-Todo o curso será realizado em servidores Linux (ubuntu) na AWS. Estes servidores possuem todas as ferramentas utilizadas no curso já instaladas, assim como as configurações necessárias. É importante lembrar que na maioria dos casos do dia-a-dia de um bioinformata, estas configurações e instalações podem ser necessárias.  
+Todo o curso será realizado em servidores Linux (ubuntu) na AWS. Estes servidores possuem todas as ferramentas utilizadas no curso já instaladas, assim como as configurações necessárias. É importante lembrar que na maioria dos casos do dia-a-dia de um bioinformata, estas configurações e instalações podem ser necessárias e de responsabilidade do bioinformata.  
 
-**Chave de acesso e usuários SSH**  
-Os alunos terão acesso ao arquivo pem ou ppk que corresponde à chave de acesso SSH aos servidores. É necessário fazer o download destas chaves e configurar o cliente ssh para acessar os servidores utilizando esta chave. Além das senhas, cada aluno terá um usuário único no intervalo user1 ao user110
-* Arquivo com as chaves SSH em formato [ppk](https://github.com/deyvidamgarten/bioinfo-curso/blob/master/Aula01/cursoBioInfoMurilo.ppk) e [pem](https://github.com/deyvidamgarten/bioinfo-curso/blob/master/Aula01/cursoBioInfoMurilo.pem)
-* Arquivo com os usuários do servidor e respectivo aluno: [Turma 1](https://github.com/deyvidamgarten/bioinfo-curso/blob/master/Aula01/turma1_usuarios.tsv) e [Turma 2](https://github.com/deyvidamgarten/bioinfo-curso/blob/master/Aula01/turma2_usuarios.tsv)
+**Usuário e senha**  
+Cada aluno receberá uma mensagem no email cadastrado durante a inscrição com os dados de usuário e senha para acesso aos servidores.
+Fique atento para as seguintes informações:  
+**User  
+Password  
+IP  
+Port**  
 
 **Procedimento de acesso**
-* Utilizar MOBA
-* Especificar o endereço de IP: Turma 1 (verificar quadro) e Turma 2 (verificar quadro)
-* Não especificar usuário no MOBA e especificar o caminho para a chave
+* Fazer download e instalar [MOBA](https://mobaxterm.mobatek.net/download-home-edition.html)
+* Clique em "Sessão" -> "Nova Sessão" -> "SSH"
+* Especificar os dados de acordo com informações recebidas no email: Remote host (IP), username, port 
+* Clique em OK para iniciar a sessão
 
 ## Checar as permissões e coverter os BCLs para FASTQ
 Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. **Este procedimento será feito apenas pelo palestrante**.
