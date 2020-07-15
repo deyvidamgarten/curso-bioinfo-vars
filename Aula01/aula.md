@@ -86,13 +86,15 @@ wc -l arq_texto_exemplo.txt
 
 ## Checar as permissões e coverter os BCLs para FASTQ
 Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. 
-**Este procedimento já foi realizado pelo palestrante**.
+**Este procedimento será realizado apenas pelo palestrante**.
 ```
 ls -l /bioinfo/dados/NextSeq_RUN01
 chmod -R 775 /bioinfo/dados/NextSeq_RUN01/Files
 cd /bioinfo/dados/NextSeq_RUN01/Files
 nohup bcl2fastq --no-lane-splitting --barcode-mismatches 1 1>bcl2fastq.log &
 ```
+
+# DIA 2
 
 ## Criar a estrutura de diretórios para trabalhar;
 ```
