@@ -22,16 +22,6 @@ Port**
 * Especificar os dados de acordo com informações recebidas no email: Remote host (IP), username, port 
 * Clique em OK para iniciar a sessão
 
-## Checar as permissões e coverter os BCLs para FASTQ
-Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. 
-**Este procedimento já foi realizado pelo palestrante**.
-```
-ls -l /bioinfo/dados/NextSeq_RUN01
-chmod -R 775 /bioinfo/dados/NextSeq_RUN01/Files
-cd /bioinfo/dados/NextSeq_RUN01/Files
-nohup bcl2fastq --no-lane-splitting --barcode-mismatches 1 1>bcl2fastq.log &
-```
-
 ## Manual dos comando de linux
 Forma fácil de obter informações sobre comandos específicos do linux:
 
@@ -89,15 +79,21 @@ vim arq_texto_exemplo.txt
 cat arq_texto_exemplo.txt 
 ```
 
-## Filtrar o conteúdo de um arquivo baseado em um padrão;
-```
-grep <padrão> arq_texto_exemplo.txt 
-```
-
 ## Contar o número de linhas de um arquivo;
 ```
 wc -l arq_texto_exemplo.txt
 ```
+
+## Checar as permissões e coverter os BCLs para FASTQ
+Os dados que saem do sequenciador são arquivos de imagens em formato BCL. Eles precisam passar pelo processo de _basecalling_, ou chamada de bases. 
+**Este procedimento já foi realizado pelo palestrante**.
+```
+ls -l /bioinfo/dados/NextSeq_RUN01
+chmod -R 775 /bioinfo/dados/NextSeq_RUN01/Files
+cd /bioinfo/dados/NextSeq_RUN01/Files
+nohup bcl2fastq --no-lane-splitting --barcode-mismatches 1 1>bcl2fastq.log &
+```
+
 ## Criar a estrutura de diretórios para trabalhar;
 ```
 mkdir dados
