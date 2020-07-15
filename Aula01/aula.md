@@ -77,7 +77,7 @@ cd ~/
 
 ## Editor de texto básico de linux;
 ```
-vi arq_texto_exemplo.txt
+vim arq_texto_exemplo.txt
 
 #<Esc>i  		 = inserir texto antes do cursor, até precionar <Esc> </br>
 #<Esc>dd  		 = deletar a linha inteira; </br>
@@ -126,8 +126,6 @@ mkdir referencia/hg19
 pwd
 ```
 
-# Dia 2
-
 ## Copiar os FASTQ para sua pasta de análise;
 ```
 cp /bioinfo/dados/NextSeq_RUN01/Files/Data/Intensities/BaseCalls/AMOSTRA01_S1*.fastq.gz dados/fastq/
@@ -145,7 +143,6 @@ time fastqc -o dados/fastqc dados/fastq/AMOSTRA01_S1_R1_001.fastq.gz dados/fastq
 Manual do [FastQC](https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf).</br>
 Exemplo de resultado [BOM](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) e [RUIM](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html).</br>
 
-# Dia 3
 
 ## Remover os reads fora do padrão configurado no sequenciamento 75bp e Q20;
 ```
